@@ -7,7 +7,14 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ExploreContainerComponent implements OnInit {
   @Input() name: string;
-
+  src= 'assets/img/rocha.jpg'
+  slideOpt ={
+    direction: 'horizontal',
+    slidesPerView: 2,
+    pagination: {
+      el: '.swiper-pagination',
+    }
+  }
   constructor() { }
 
   ngOnInit() {}
